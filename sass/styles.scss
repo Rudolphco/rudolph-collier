@@ -1,0 +1,106 @@
+//color variables
+$color-primary: #fff;
+$color-accent: #4058da;
+$color-text: #6c7085;
+$color-black: #0f1538;
+$color-white: #fff;
+// $color-devider: #e5e9ff;
+$color-devider: #f7f8ff;
+
+//fontsize variables
+$fs-xxlarge: 3.75rem;
+$fs-xlarge: 2.75rem;
+$fs-large: 2.25rem;
+$fs-medium: 1.75rem;
+$fs-small: 1.25rem;
+$fs-xsmall: 1rem;
+$fs-xxsmall: 0.9rem;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $color-text;
+  font-size: $fs-xsmall;
+  line-height: 1.5;
+}
+
+/*Navbar style*/
+.nav {
+  &-logo {
+    color: $color-black;
+    padding-top: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    display: inline-block;
+    font-size: $fs-xsmall;
+    text-decoration: none;
+    text-transform: capitalize;
+    word-wrap: break-word;
+  }
+
+  &-item {
+    font-size: $fs-xxsmall;
+  }
+
+  &-link {
+    padding-left: 1rem;
+    color: $color-black;
+    font-size: $fs-xxsmall;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &-link.active {
+    color: $color-white !important;
+    background-color: $color-black;
+  }
+
+  &-btn {
+    padding: 0.3rem 1.6rem;
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: $color-white;
+
+    &:hover {
+      color: $color-accent;
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column !important;
+}
+
+//mobile nav
+.collapse.navbar-collapse {
+  display: block !important;
+  position: fixed;
+  width: 15%;
+  min-height: 100vh;
+  top: 0px;
+  left: 0px;
+  padding-top: 2rem;
+  background: $color-devider;
+  transition: right 0.5s ease;
+}
+
+//content
+.pen-wrapper {
+  // width: 100%;
+}
+
+
+.content {
+  // position: relative;
+  // left: 10%;
+  padding: 0.5rem 2rem;
+  padding-left: 15rem;
+}

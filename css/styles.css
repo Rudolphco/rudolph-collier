@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #6c7085;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*Navbar style*/
+.nav-logo {
+  color: #0f1538;
+  padding-top: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  padding-left: 1rem;
+  color: #0f1538;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #4058da;
+}
+
+.nav-link.active {
+  color: #fff !important;
+  background-color: #0f1538;
+}
+
+.nav-btn {
+  padding: 0.3rem 1.6rem;
+  background-color: #4058da;
+  border-color: #4058da;
+  color: #fff;
+}
+
+.nav-btn:hover {
+  color: #4058da;
+  background-color: transparent;
+}
+
+.navbar-expand-lg .navbar-nav {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.collapse.navbar-collapse {
+  display: block !important;
+  position: fixed;
+  width: 15%;
+  min-height: 100vh;
+  top: 0px;
+  left: 0px;
+  padding-top: 2rem;
+  background: #f7f8ff;
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+
+.content {
+  padding: 0.5rem 2rem;
+  padding-left: 15rem;
+}
+/*# sourceMappingURL=styles.css.map */
